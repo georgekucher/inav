@@ -50,6 +50,7 @@ extern rangefinder_t rangefinder;
 
 const rangefinderHardwarePins_t * rangefinderGetHardwarePins(void);
 
+bool isSurfaceAltitudeValid();
 void rangefinderResetDynamicThreshold(void);
 bool rangefinderInit(void);
 
