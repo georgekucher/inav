@@ -101,8 +101,9 @@
 #define USE_BARO_BMP280
 
 #define MAG
-#define USE_MAG_HMC5883
-#define MAG_HMC5883_ALIGN       CW180_DEG
+//#define USE_MAG_HMC5883
+#define USE_MAG_QMC5883
+//#define MAG_QMC5883L_ALIGN       CW180_DEG
 
 // #define USE_RANGEFINDER
 // #define USE_RANGEFINDER_HCSR04
@@ -176,16 +177,16 @@
 //#define NAV_GPS_GLITCH_DETECTION
 
 //#define LED_STRIP
-#define WS2811_PIN                      PA6
-#define WS2811_DMA_TC_FLAG              DMA1_FLAG_TC6
-#define WS2811_DMA_HANDLER_IDENTIFER    DMA1_CH6_HANDLER
+//#define WS2811_PIN                      PA6
+//#define WS2811_DMA_TC_FLAG              DMA1_FLAG_TC6
+//#define WS2811_DMA_HANDLER_IDENTIFER    DMA1_CH6_HANDLER
 
 #undef USE_SERIALRX_SPEKTRUM
 #undef USE_SERIALRX_IBUS
 //#define SPEKTRUM_BIND
 //#define BIND_PIN                PA3
 
-//#define USE_SERIAL_4WAY_BLHELI_INTERFACE
+#define USE_SERIAL_4WAY_BLHELI_INTERFACE
 
 #define TARGET_MOTOR_COUNT      6
 

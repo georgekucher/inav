@@ -24,22 +24,24 @@
 #define USE_SERVOS
 #define USE_CLI
 
-#define USE_RX_PWM
+//#define USE_RX_PWM
 #define USE_RX_PPM
-#define SERIAL_RX
-#define USE_SERIALRX_SPEKTRUM   // Cheap and fairly common protocol
-#define USE_SERIALRX_SBUS       // Very common protocol
-#define USE_SERIALRX_IBUS       // Cheap FlySky & Turnigy receivers
+//#define SERIAL_RX
+//#define USE_SERIALRX_SPEKTRUM   // Cheap and fairly common protocol
+//#define USE_SERIALRX_SBUS       // Very common protocol
+//#define USE_SERIALRX_IBUS       // Cheap FlySky & Turnigy receivers
 
 #if (FLASH_SIZE > 64)
-#define BLACKBOX
+//#define BLACKBOX
 #define GPS
-#define GPS_PROTO_UBLOX
+#define GPS_PROTO_NMEA
 #define NAV
-#define USE_FLM_TURN_ASSIST     // This is mandatory for fixed-wing navigation
+//#define USE_FLM_TURN_ASSIST     // This is mandatory for fixed-wing navigation
 #define TELEMETRY
 #define TELEMETRY_LTM
 #define TELEMETRY_FRSKY
+//#define LED_STRIP
+#define ASYNC_GYRO_PROCESSING
 #endif
 
 #if defined(STM_FAST_TARGET)
